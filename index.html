@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FastImage - Your Reliable Image Hosting Service</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        main {
+            flex: 1;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section.features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+        .feature {
+            background: white;
+            flex: 1 1 250px;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FastImage</h1>
+        <p>Simple, fast, and reliable image hosting for all your sharing needs.</p>
+    </header>
+    <main>
+        <section class="features">
+            <div class="feature">
+                <h3>Unlimited Storage</h3>
+                <p>Upload and store as many images as you want without worrying about limits.</p>
+            </div>
+            <div class="feature">
+                <h3>High-Speed Delivery</h3>
+                <p>Images are served via a fast global CDN for quick loading anywhere.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy Sharing</h3>
+                <p>Get direct image links and embed codes for hassle-free sharing on websites and social media.</p>
+            </div>
+            <div class="feature">
+                <h3>Privacy Controls</h3>
+                <p>Choose to keep your images private or share them publicly with customizable access settings.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> FastImage. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
